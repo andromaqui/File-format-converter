@@ -1,0 +1,105 @@
+
+body {
+    background: #fafafa;
+    color: #333333;
+    margin-top: 5rem;
+    height: 100% !important
+  }
+
+.list-group-item a{
+  color:#333333 !important;
+}
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  ul {
+    margin: 0;
+  }
+
+  
+
+  .site-header {
+    background-color: #f9ec00 !important;
+  }
+  
+  .bg-steel {
+    background-color: #f9ec00 !important;
+  }
+  
+
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #fe4a49;
+  }
+  
+
+  form {
+    max-width: 540px !important;
+  }
+
+  #maincontainer {
+    height: 100vh !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    width: 100vw !important;
+    align-items: center !important;
+  }
+
+ 
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+
+  .navbar {
+    background-color: #aad300 !important;
+  }
+
+  #inputbutton {
+    background-color: #fe4a49 !important;
+  }
+
+  .btncolor {
+    color: #ffffff !important;
+    background-color: #aad300 !important;
+  }
+  
+
+  button, input[type=file] {
+    cursor:pointer !important;
+  }
+
+  .uploadbutton{
+    color: #000000!important;
+    background-color: #ffffff !important;
+    border-color: #aad300;
+    font-family:Arial, Helvetica, sans-serif;
+    
+  }
+  
+#about{
+  font-family:Arial, Helvetica, sans-serif !important;
+}
+ 
+ #filedata {
+   color: #999999 !important;
+   font-family: Arial, Helvetica, sans-serif !important;
+   font-weight: 100 !important;
+ }
+
+#homepage{
+  font-family:Arial, Helvetica, sans-serif !important;
+
+}

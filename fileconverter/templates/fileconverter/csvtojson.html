@@ -1,0 +1,15 @@
+{% extends "fileconverter/base.html" %}
+
+{% block content  %}
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.csv_file }}
+    {{ form.csv_file.errors }}
+
+    <button type="submit" class="uploadbutton">Convert CSV</button>
+</form>
+
+{% endblock %}
+
+
