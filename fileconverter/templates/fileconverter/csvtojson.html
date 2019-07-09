@@ -4,10 +4,10 @@
 
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
-    {{ form.csv_file }}
-    {{ form.csv_file.errors }}
-
+    {{ form.csv_file}}
     <button type="submit" class="uploadbutton">Convert CSV</button>
+    <p> <h5 style="color: #aad300;" > {{ form.csv_file.errors.as_text }}</h5></p>
+
 </form>
 
 {% endblock %}
