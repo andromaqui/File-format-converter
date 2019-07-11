@@ -19,15 +19,15 @@ def csvtojson(request):
     if request.method == 'POST':
         form = CsvForm(request.POST, request.FILES)
         if form.is_valid():
-           form.save()
+           fileObject =  form.save()
            s3_client = boto3.client('s3', 
                       aws_access_key_id=settings.AWS_ACCESS_KEY_ID, 
                       aws_secret_access_key=settings.AWS_SECRET_ACCESS_KEY, 
                       region_name="eu-central-1"
                       )
            time.sleep(3)
-           file_key = request.FILES['csv_file'].name  + ".json"
-           bucket = os.environ.get("bucketname") # name of the s3 bucket
+           file_key = str(fileObject.id) + ".csv.json"
+           bucket = os.environ.get("bucket")
            uri_duration = 90 #expiry duration in seconds. default 3600
            url = s3_client.generate_presigned_url('get_object', Params = 
            {'Bucket': bucket, 'Key': file_key}, ExpiresIn = uri_duration)
