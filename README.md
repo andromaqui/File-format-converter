@@ -10,7 +10,8 @@ As the app is still under development, here are the next steps:
 
 - [ ] Deploy project on `AWS EC2`.
 - [ ] Write a CSV validator, to verify the content of the uploaded files.
-- [ ] Make a database which stores file reference in a timestamped way so that overriding of uploaded files can be avoided.
+- [x] Rename files with a generated `UUID` to avoid overriding in the `S3 Bucket`. 
 - [x] Edit the CSS of the file upload form.
 - [ ] Extend app functionality by developing features such as `JSON` to `CSV` convertion.
+- [ ] Migrate SQLite to MySQL.
 

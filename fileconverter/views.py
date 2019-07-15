@@ -5,11 +5,8 @@ from django.core.files.storage import FileSystemStorage
 from django.contrib import messages
 from django.conf import settings
 from .forms import CsvForm
-from dotenv import load_dotenv
 
-#loads .env file for config
-dotenv_path = os.path.join(os.getcwd(), '.env')
-load_dotenv(dotenv_path)
+
 
 def about(request):
     return render(request, 'fileconverter/about.html')
@@ -27,7 +24,7 @@ def csvtojson(request):
                       )
            time.sleep(3)
            file_key = str(fileObject.id) + ".csv.json"
-           bucket = os.environ.get("bucket")
+           bucket = "downloadjson"
            uri_duration = 90 #expiry duration in seconds. default 3600
            url = s3_client.generate_presigned_url('get_object', Params = 
            {'Bucket': bucket, 'Key': file_key}, ExpiresIn = uri_duration)
