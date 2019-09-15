@@ -14,4 +14,5 @@ As the app is still under development, here are the next steps:
 - [x] Edit the CSS of the file upload form.
 - [ ] Extend app functionality by developing features such as `JSON` to `CSV` convertion.
 - [ ] Migrate SQLite to MySQL.
+- [ ] Set file size limit.
 
